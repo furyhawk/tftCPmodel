@@ -1,0 +1,3224 @@
+window.simulator = {
+    isReadOnly: false,
+    currentSet: 'set2',
+    championStats: [
+        {
+            "key": "aatrox",
+            "cost": 3,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Blademaster"
+            ],
+            "champion": {
+                "key": "Aatrox",
+                "name": "Aatrox",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/aatrox.png",
+                "skill": {
+                    "name": "The Arclight Blade",
+                    "type": "Active",
+                    "desc": "Aatrox cleaves the area in front of him, dealing magic damage to all enemies within.",
+                    "stats": [
+                        "Damage: 300 \/ 600 \/ 1200"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/aatrox_thedarkinblade.png",
+                    "cost": 70,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Aatrox"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/aatrox",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Aatrox",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 65,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 46,
+                "health": 800,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "amumu",
+            "cost": 5,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Amumu",
+                "name": "Amumu",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/amumu.png",
+                "skill": {
+                    "name": "Curse of the Sad Mummy",
+                    "type": "Active",
+                    "desc": "Amumu\u2019s rage explodes, dealing magic damage to enemies within some Hexes, and stunning them.",
+                    "stats": [
+                        "Damage : 100 \/ 200 \/ 1337",
+                        "Hexes : 3 \/ 3 \/ 3",
+                        "Stun Duration : 1.5 \/ 2 \/ 5"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/amumu_curseofthesadmummy.png",
+                    "cost": 150,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Amumu"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/amumu",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Amumu",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 60,
+                "attack_damage": 55,
+                "attack_range_slot": 1,
+                "attack_speed": 0.75,
+                "dps": 41,
+                "health": 900,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "annie",
+            "cost": 4,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Summoner"
+            ],
+            "champion": {
+                "key": "Annie",
+                "name": "Annie",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/annie.png",
+                "skill": {
+                    "name": "Tibbers!",
+                    "type": "Active",
+                    "desc": "Annie summons Tibbers near her target, dealing magic damage to all adjacent enemies. Tibbers fights for the rest of combat, dealing magic damage with each attack.",
+                    "stats": [
+                        "Initial Damage: 100 \/ 200 \/ 300",
+                        "Tibbers Damage: 125 \/ 350 \/ 1500"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/annie_summontibbers.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Annie"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/annie",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Annie",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 45,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 32,
+                "health": 700,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "ashe",
+            "cost": 4,
+            "origins": [
+                "Crystal"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Ashe",
+                "name": "Ashe",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/ashe.png",
+                "skill": {
+                    "name": "Ranger's Focus",
+                    "type": "Active",
+                    "desc": "For 5 seconds, Ashe gains % Attack Speed, and her basic attacks fire a flurry of arrows dealing physical damage.",
+                    "stats": [
+                        "Attack Speed: 50% \/ 75% \/ 100%",
+                        "Damage Per Arrow: 30% \/ 35% \/ 75%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/ashe_rangersfocus.png",
+                    "cost": 35,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Ashe"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/ashe",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Ashe",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 60,
+                "attack_range_slot": 4,
+                "attack_speed": 0.8,
+                "dps": 48,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "azir",
+            "cost": 3,
+            "origins": [
+                "Desert"
+            ],
+            "classes": [
+                "Summoner"
+            ],
+            "champion": {
+                "key": "Azir",
+                "name": "Azir",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/azir.png",
+                "skill": {
+                    "name": "Arise!",
+                    "type": "Active",
+                    "desc": "Azir summons a Sand Soldier at the chosen location that lasts 6 seconds. Sand Soldiers attack nearby enemies whenever Azir attacks, dealing magic damage in a line.",
+                    "stats": [
+                        "Damage: 150 \/ 275 \/ 450"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/azir_arise.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Azir"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/azir",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Azir",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 55,
+                "attack_range_slot": 3,
+                "attack_speed": 0.8,
+                "dps": 44,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "brand",
+            "cost": 4,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Mage"
+            ],
+            "champion": {
+                "key": "Brand",
+                "name": "Brand",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/brand.png",
+                "skill": {
+                    "name": "Pyroclasm",
+                    "type": "Active",
+                    "desc": "Brand launches a bouncing fireball at an enemy. This fireball will bounce to nearby enemies, dealing magic damage each time it hits.",
+                    "stats": [
+                        "Damage: 225 \/ 300 \/ 600",
+                        "Max Bounces: 5 \/ 7 \/ 20"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/brand_pyroclasm.png",
+                    "cost": 80,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Brand"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/brand",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Brand",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 55,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 39,
+                "health": 700,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "braum",
+            "cost": 2,
+            "origins": [
+                "Glacial"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Braum",
+                "name": "Braum",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/braum.png",
+                "skill": {
+                    "name": "Unbreakable",
+                    "type": "Active",
+                    "desc": "Braum puts up his shield for 4 seconds, absorbing and stopping all incoming missiles and reducing his damage taken from that direction.",
+                    "stats": [
+                        "Damage Reduce: 70 \/ 80 \/ 90"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/braum_unbreakable.png",
+                    "cost": 65,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Braum"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/braum",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Braum",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 60,
+                "attack_damage": 40,
+                "attack_range_slot": 1,
+                "attack_speed": 0.6,
+                "dps": 24,
+                "health": 750,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "diana",
+            "cost": 1,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Assassin"
+            ],
+            "champion": {
+                "key": "Diana",
+                "name": "Diana",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/diana.png",
+                "skill": {
+                    "name": "Flame Cascade",
+                    "type": "Active",
+                    "desc": "Diana creates 3 flame orbs rotating around her which explode when they collide with an enemy. dealing magic damage. In addition, Diana shields herself for 3 seconds, absorbing the next damage she would take.",
+                    "stats": [
+                        "Orbs: 3 \/ 4 \/ 5",
+                        "Damage: 80 \/ 100 \/ 120",
+                        "Shield Amount: 150 \/ 250 \/ 350"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/diana_palecascade.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Diana"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/diana",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Diana",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 50,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 35,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "drmundo",
+            "cost": 3,
+            "origins": [
+                "Poison"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "DrMundo",
+                "name": "Dr. Mundo",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/drmundo.png",
+                "skill": {
+                    "name": "Adrenaline Rush",
+                    "type": "Active",
+                    "desc": "Dr. Mundo creates a toxic cloud around him for 8seconds, dealing damage + 125% his maximum health as magic damage to nearby enemies each second and healing for % that value.",
+                    "stats": [
+                        "Damage: 45 \/ 100 \/ 150",
+                        "Heal Ratio: 1 \/ 1.5 \/ 1.5"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/drmundo_adrenalinerush.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/DrMundo"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/drmundo",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/DrMundo",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.6,
+                "dps": 36,
+                "health": 750,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "ezreal",
+            "cost": 3,
+            "origins": [
+                "Glacial"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Ezreal",
+                "name": "Ezreal",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/ezreal.png",
+                "skill": {
+                    "name": "Ice Shot",
+                    "type": "Active",
+                    "desc": "Ezreal fires a shard of ice at the lowest HP unit, dealing magic damage and applying on-hits.",
+                    "stats": [
+                        "Damage: 225 \/ 450 \/ 900"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/ezreal_mysticshot.png",
+                    "cost": 30,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Ezreal"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/ezreal",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Ezreal",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 65,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 46,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "ivern",
+            "cost": 1,
+            "origins": [
+                "Forest"
+            ],
+            "classes": [
+                "Druid"
+            ],
+            "champion": {
+                "key": "Ivern",
+                "name": "Ivern",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/ivern.png",
+                "skill": {
+                    "name": "Triggerseed",
+                    "type": "Active",
+                    "desc": "Ivern shields the lowest health ally for 5 secondes, preventing the next damage.",
+                    "stats": [
+                        "Shield Amount: 200 \/ 300 \/ 400"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/ivern_triggerseed.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Ivern"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/ivern",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Ivern",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 50,
+                "attack_range_slot": 2,
+                "attack_speed": 0.6,
+                "dps": 30,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "janna",
+            "cost": 4,
+            "origins": [
+                "Wind"
+            ],
+            "classes": [
+                "Mystic"
+            ],
+            "champion": {
+                "key": "Janna",
+                "name": "Janna",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/janna.png",
+                "skill": {
+                    "name": "Monsoon",
+                    "type": "Active",
+                    "desc": "Janna summons a Monsoon, healing all allies in the area for % of their max health over 3 seconds. Nearby enemies are knocked back and stunned for 1 second.",
+                    "stats": [
+                        "Heal: 20% \/ 30% \/ 100%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/janna_monsoon.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Janna"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/janna",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Janna",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 45,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 32,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "jax",
+            "cost": 2,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "Jax",
+                "name": "Jax",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/jax.png",
+                "skill": {
+                    "name": "Counter Strike",
+                    "type": "Active",
+                    "desc": "Jax dodges all incoming attacks for 2 seconds, then strikes all nearby units, dealing damage and stunning them for 1.5 second.",
+                    "stats": [
+                        "Damage: 150 \/ 250 \/ 450"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/jax_counterstrike.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Jax"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/jax",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Jax",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 55,
+                "attack_range_slot": 1,
+                "attack_speed": 0.8,
+                "dps": 44,
+                "health": 700,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "karma",
+            "cost": 3,
+            "origins": [
+                "Lunar"
+            ],
+            "classes": [
+                "Mystic"
+            ],
+            "champion": {
+                "key": "Karma",
+                "name": "Karma",
+                "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/champion\/Karma.png",
+                "skill": {
+                    "name": "Dawnbringer",
+                    "type": "Active",
+                    "desc": "At the start of combat, Karma tethers to her closest ally. Karma shields the tethered ally (or a random one if the tether is dead) for 5 seconds, absorbing the next damage. While the shield holds, the ally receives bonus Attack Speed.",
+                    "stats": [
+                        "Shield Amount: 250 \/ 400 \/ 800",
+                        "Attack Speed: 40% \/ 60% \/ 80%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/karma_dawnbringer.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Karma"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/karma",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Karma",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 50,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 35,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "khazix",
+            "cost": 4,
+            "origins": [
+                "Desert"
+            ],
+            "classes": [
+                "Assassin"
+            ],
+            "champion": {
+                "key": "Khazix",
+                "name": "Khazix",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/khazix.png",
+                "skill": {
+                    "name": "Arid Assault",
+                    "type": "Active",
+                    "desc": "Kha\u2019zix stealths and attacks the lowest health enemy, critically striking damage and gaining 5 mana.",
+                    "stats": [
+                        "Bonus Damage: 100 \/ 200 \/ 500",
+                        "Mana Refund: 5 \/ 10 \/  15"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/khazix_voidassault.png",
+                    "cost": 40,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Khazix"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/khazix",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Khazix",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 75,
+                "attack_range_slot": 1,
+                "attack_speed": 0.8,
+                "dps": 60,
+                "health": 750,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "kindred",
+            "cost": 3,
+            "origins": [
+                "Inferno",
+                "Shadow"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Kindred",
+                "name": "Kindred",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/kindred.png",
+                "skill": {
+                    "name": "Dance of Dread",
+                    "type": "Active",
+                    "desc": "Wolf mauls Kindred's target, dealing magic damage and reducing healing by 80% to her target for 5 seconds., while Lamb leaps away from Kindred's target.",
+                    "stats": [
+                        "Damage: 150 \/ 325 \/ 650"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/kindred_danceofdread.png",
+                    "cost": 35,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Kindred"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/kindred",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Kindred",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 55,
+                "attack_range_slot": 3,
+                "attack_speed": 0.75,
+                "dps": 41,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "kogmaw",
+            "cost": 1,
+            "origins": [
+                "Poison"
+            ],
+            "classes": [
+                "Predator"
+            ],
+            "champion": {
+                "key": "KogMaw",
+                "name": "Kog'Maw",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/kogmaw.png",
+                "skill": {
+                    "name": "Living Artillery",
+                    "type": "Active",
+                    "desc": "Kog'Maw launches an artillery shot at a random enemy, dealing magic damage on impact",
+                    "stats": [
+                        "Damage: 125 \/ 275 \/ 425"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/kogmaw_livingartillery.png",
+                    "cost": 40,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/KogMaw"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/kogmaw",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/KogMaw",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 45,
+                "attack_range_slot": 4,
+                "attack_speed": 0.7,
+                "dps": 32,
+                "health": 500,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "leblanc",
+            "cost": 2,
+            "origins": [
+                "Forest"
+            ],
+            "classes": [
+                "Assassin",
+                "Mage"
+            ],
+            "champion": {
+                "key": "Leblanc",
+                "name": "LeBlanc",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/leblanc.png",
+                "skill": {
+                    "name": "Ethereal Chains",
+                    "type": "Active",
+                    "desc": "Leblanc launches an ethereal chain towards a random enemy, deals damage and stuns them for 1 second after a short delay.",
+                    "stats": [
+                        "Damage: 200 \/ 450 \/ 800"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/leblanc_etherealchains.png",
+                    "cost": 80,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Leblanc"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/leblanc",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Leblanc",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 55,
+                "attack_range_slot": 2,
+                "attack_speed": 0.7,
+                "dps": 39,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "leona",
+            "cost": 1,
+            "origins": [
+                "Lunar"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Leona",
+                "name": "Leona",
+                "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/champion\/Leona.png",
+                "skill": {
+                    "name": "Lunar Eclipse",
+                    "type": "Active",
+                    "desc": "Leona reduces all damage done to her for 5 seconds.",
+                    "stats": [
+                        "Damage Reduce: 40 \/ 80 \/ 120"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/leona_lunareclipse.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Leona"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/leona",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Leona",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 40,
+                "attack_damage": 50,
+                "attack_range_slot": 1,
+                "attack_speed": 0.55,
+                "dps": 28,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "lucian",
+            "cost": 4,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Soulbound"
+            ],
+            "champion": {
+                "key": "Lucian",
+                "name": "Lucian",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/lucian.png",
+                "skill": {
+                    "name": "The Culling",
+                    "type": "Active",
+                    "desc": "Lucian fires 10 + (8X his attacks per second) bullets in a direction over 4 seconds, each dealing % of his Attack Damage, applying on-hits, and dealing additional magic damage.",
+                    "stats": [
+                        "Damage : 25% \/ 30% \/ 50%",
+                        "On-hits damage : 40 \/ 50 \/ 100"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/lucian_theculling.png",
+                    "cost": 50,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Lucian"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/lucian",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Lucian",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 65,
+                "attack_range_slot": 3,
+                "attack_speed": 0.8,
+                "dps": 52,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": null
+            }
+        },
+        {
+            "key": "lux",
+            "cost": 7,
+            "origins": [
+                "Steel",
+                "Shadow",
+                "Ocean",
+                "Wind",
+                "Glacial",
+                "Light",
+                "Crystal",
+                "Forest",
+                "Electric",
+                "Inferno"
+            ],
+            "classes": [
+                "Avatar"
+            ],
+            "champion": {
+                "key": "Lux",
+                "name": "Lux",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/lux.png",
+                "skill": {
+                    "name": "Final Spark",
+                    "type": "Active",
+                    "desc": "Lux fires an elemental blast dealing magic damage to all enemies in a line. If Final Spark kills a unit, Lux is refunded 50 mana.",
+                    "stats": [
+                        "Damage: 600 \/ 900 \/ 9999"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/lux_finalspark.png",
+                    "cost": 80,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Lux"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/lux",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Lux",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 65,
+                "attack_range_slot": 4,
+                "attack_speed": 0.85,
+                "dps": 55,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "malphite",
+            "cost": 4,
+            "origins": [
+                "Mountain"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Malphite",
+                "name": "Malphite",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/malphite.png",
+                "skill": {
+                    "name": "Unstoppable Force",
+                    "type": "Active",
+                    "desc": "Malphite charges to a random enemy, dealing damage to and knocking all nearby enemies into the air, stunning them for a seconds.",
+                    "stats": [
+                        "Damage: 150 \/ 300 \/ 1000",
+                        "Stun Duration: 2 \/ 2.5 \/ 5"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/malphite_unstoppableforce.png",
+                    "cost": 150,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Malphite"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/malphite",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Malphite",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 50,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.55,
+                "dps": 33,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "malzahar",
+            "cost": 2,
+            "origins": [
+                "Shadow"
+            ],
+            "classes": [
+                "Summoner"
+            ],
+            "champion": {
+                "key": "Malzahar",
+                "name": "Malzahar",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/malzahar.png",
+                "skill": {
+                    "name": "Shadow Swarm",
+                    "type": "Active",
+                    "desc": "Malzahar creates a shadow portal, summoning 2 Shadow Spawn. The Shadow Spawn hit for magic damage each attack. Shadow Spawn benefit from active Shadow trait bonuses.",
+                    "stats": [
+                        "Number of Voidlings: 2 \/ 3 \/ 4",
+                        "Damage: 40 \/ 70 \/ 100",
+                        "Shadow Swarm Health: 250 \/ 300 \/ 400"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/malzahar_voidswarm.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Malzahar"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/malzahar",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Malzahar",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.65,
+                "dps": 26,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "maokai",
+            "cost": 1,
+            "origins": [
+                "Forest"
+            ],
+            "classes": [
+                "Druid"
+            ],
+            "champion": {
+                "key": "Maokai",
+                "name": "Maokai",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/maokai.png",
+                "skill": {
+                    "name": "Sap Magic",
+                    "type": "Passive",
+                    "desc": "After being damaged by an enemy spell, Maokai's next attack heals him.",
+                    "stats": [
+                        "Heal : 100 \/ 150 \/ 200"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/maokai_sapmagic.png",
+                    "cost": 0,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Maokai"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/maokai",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Maokai",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 55,
+                "attack_range_slot": 1,
+                "attack_speed": 0.5,
+                "dps": 28,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "masteryi",
+            "cost": 5,
+            "origins": [
+                "Shadow"
+            ],
+            "classes": [
+                "Blademaster",
+                "Mystic"
+            ],
+            "champion": {
+                "key": "MasterYi",
+                "name": "Master Yi",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/masteryi.png",
+                "skill": {
+                    "name": "Meditate",
+                    "type": "Active",
+                    "desc": "Master Yi meditates, becoming untargetable for 1 second, healing 30% of his max health over the duration. For 6 seconds after he finishes meditating, Master Yi gains 100% attack speed and deals bonus magic damage on hit.",
+                    "stats": [
+                        "Bonus Damage: 75 \/ 100 \/ 500"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/masteryi_meditate.png",
+                    "cost": 150,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/MasterYi"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/masteryi",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/MasterYi",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 70,
+                "attack_range_slot": 1,
+                "attack_speed": 1,
+                "dps": 70,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 100
+            }
+        },
+        {
+            "key": "nami",
+            "cost": 5,
+            "origins": [
+                "Ocean"
+            ],
+            "classes": [
+                "Mystic"
+            ],
+            "champion": {
+                "key": "Nami",
+                "name": "Nami",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/nami.png",
+                "skill": {
+                    "name": "Tidal Wave",
+                    "type": "Active",
+                    "desc": "Nami summons a massive tidal wave which deals damage to all enemies hit, knocking up and stunning them for a seconds. Allies hit are empowered, and their basic attacks deal an additional magic damage for the next 8 seconds.",
+                    "stats": [
+                        "Damage: 100 \/ 200 \/ 300",
+                        "Stun Duration: 1.5 \/ 2 \/ 2.5",
+                        "Ally Bonus Damage: 25 \/ 50 \/ 300"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/nami_tidalwave.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Nami"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/nami",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Nami",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 50,
+                "attack_range_slot": 4,
+                "attack_speed": 0.75,
+                "dps": 38,
+                "health": 750,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "nasus",
+            "cost": 1,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Nasus",
+                "name": "Nasus",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/nasus.png",
+                "skill": {
+                    "name": "Fury of the Dawn",
+                    "type": "Active",
+                    "desc": "Nasus surrounds himself in light for 7 seconds, gaining maximun health and dealing damage to adjacent enemies every second.",
+                    "stats": [
+                        "Bonus Health: 250 \/ 400 \/ 550",
+                        "Damage Per Second: 50 \/ 70 \/ 90"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/nasus_furyofthedawn.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Nasus"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/nasus",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Nasus",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 40,
+                "attack_damage": 50,
+                "attack_range_slot": 1,
+                "attack_speed": 0.55,
+                "dps": 28,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "nautilus",
+            "cost": 3,
+            "origins": [
+                "Ocean"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Nautilus",
+                "name": "Nautilus",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/nautilus.png",
+                "skill": {
+                    "name": "Depth Charge",
+                    "type": "Active",
+                    "desc": "Nautilus sends out a Depth Charge that seeks out an enemy, knocking them up and stunning them for a seconds. It also deals damage to all enemies it passes through.",
+                    "stats": [
+                        "Stun Duration: 3 \/ 4 \/ 6",
+                        "Damage: 100 \/ 200 \/ 400"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/nautilus_depthcharge.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Nautilus"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/nautilus",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Nautilus",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 40,
+                "attack_damage": 55,
+                "attack_range_slot": 1,
+                "attack_speed": 0.6,
+                "dps": 33,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "neeko",
+            "cost": 2,
+            "origins": [
+                "Forest"
+            ],
+            "classes": [
+                "Druid"
+            ],
+            "champion": {
+                "key": "Neeko",
+                "name": "Neeko",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/neeko.png",
+                "skill": {
+                    "name": "Blooming Burst",
+                    "type": "Active",
+                    "desc": "Neeko throws a seed at a random target, exploding three times with increasing radius, dealing to all enemies hit by each explosion.",
+                    "stats": [
+                        "Damage: 100 \/ 200 \/ 350"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/neeko_bloomingburst.png",
+                    "cost": 60,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Neeko"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/neeko",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Neeko",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 45,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 32,
+                "health": 500,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "nocturne",
+            "cost": 3,
+            "origins": [
+                "Steel"
+            ],
+            "classes": [
+                "Assassin"
+            ],
+            "champion": {
+                "key": "Nocturne",
+                "name": "Nocturne",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/nocturne.png",
+                "skill": {
+                    "name": "Steel Blades",
+                    "type": "Passive",
+                    "desc": "Every three hits Nocturne's attack is enhanced, dealing damage and applying On Hit effects to all adjacent units, and healing % of damage dealt.",
+                    "stats": [
+                        "Percent Healed: 40% \/ 45% \/ 50%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/nocturne_steelblades.png",
+                    "cost": 0,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Nocturne"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/nocturne",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Nocturne",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 55,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 39,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "olaf",
+            "cost": 4,
+            "origins": [
+                "Glacial"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "Olaf",
+                "name": "Olaf",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/olaf.png",
+                "skill": {
+                    "name": "Ragnarok",
+                    "type": "Active",
+                    "desc": "Olaf gains % Attack Speed, up to 50% Lifesteal based on missing health, and immunity to Crowd Control for the rest of the combat.",
+                    "stats": [
+                        "Attack Speed: 100% \/ 150% \/ 300%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/olaf_ragnarok.png",
+                    "cost": 90,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Olaf"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/olaf",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Olaf",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 70,
+                "attack_range_slot": 1,
+                "attack_speed": 0.8,
+                "dps": 56,
+                "health": 750,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "ornn",
+            "cost": 1,
+            "origins": [
+                "Electric"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Ornn",
+                "name": "Ornn",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/ornn.png",
+                "skill": {
+                    "name": "Lightning Breath",
+                    "type": "Active",
+                    "desc": "Ornn breathes lightning in a cone in front of him, dealing magic damage to enemies hit, and increasing their chance to be critically struck by 20% for the next 4 seconds.",
+                    "stats": [
+                        "Damage: 100 \/ 200 \/ 300"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/ornn_electrifyingbreath.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Ornn"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/ornn",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Ornn",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 40,
+                "attack_damage": 50,
+                "attack_range_slot": 1,
+                "attack_speed": 0.55,
+                "dps": 28,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "qiyana",
+            "cost": 3,
+            "origins": [
+                "Mountain",
+                "Ocean",
+                "Wind",
+                "Inferno"
+            ],
+            "classes": [
+                "Assassin"
+            ],
+            "champion": {
+                "key": "Qiyana",
+                "name": "Qiyana",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/qiyana.png",
+                "skill": {
+                    "name": "Elemental Blade",
+                    "type": "Active",
+                    "desc": "Qiyana blasts the two hexes in front of her, stunning enemies for several seconds and dealing magic damage.",
+                    "stats": [
+                        "Damage: 300 \/ 500 \/ 900",
+                        "Stun Duration: 2.5 \/ 3.5 \/ 4.5"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/qiyana_edgeofixtal.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Qiyana"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/qiyana",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Qiyana",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 65,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 46,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "reksai",
+            "cost": 2,
+            "origins": [
+                "Steel"
+            ],
+            "classes": [
+                "Predator"
+            ],
+            "champion": {
+                "key": "RekSai",
+                "name": "Rek'Sai",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/reksai.png",
+                "skill": {
+                    "name": "Furious Bite",
+                    "type": "Active",
+                    "desc": "Rek'Sai bites an enemy, dealing true damage.",
+                    "stats": [
+                        "Damage: 250 \/ 550 \/ 850"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/reksai_furiousbite.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/RekSai"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/reksai",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/RekSai",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 42,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "renekton",
+            "cost": 1,
+            "origins": [
+                "Desert"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "Renekton",
+                "name": "Renekton",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/renekton.png",
+                "skill": {
+                    "name": "Cull the Meek",
+                    "type": "Active",
+                    "desc": "Renekton swings his blade, dealing physical damage to nearby enemies and healing himself per enemy hit.",
+                    "stats": [
+                        "Damage: 150 \/ 275 \/ 475",
+                        "Heal: 150 \/ 225 \/ 300"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/renekton_cullthemeek.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Renekton"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/renekton",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Renekton",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.6,
+                "dps": 36,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "senna",
+            "cost": 2,
+            "origins": [
+                "Shadow"
+            ],
+            "classes": [
+                "Soulbound"
+            ],
+            "champion": {
+                "key": "Senna",
+                "name": "Senna",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/senna.png",
+                "skill": {
+                    "name": "Piercing Darkness",
+                    "type": "Active",
+                    "desc": "Senna fires a beam through her furthest ally, dealing magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal magic damage from Senna.",
+                    "stats": [
+                        "Damage : 50 \/ 100 \/ 150",
+                        "On-hits damage : 15 \/ 40 \/ 65"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/senna_piercingdarkness.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Senna"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/senna",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Senna",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 45,
+                "attack_range_slot": 4,
+                "attack_speed": 0.7,
+                "dps": 32,
+                "health": 450,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "singed",
+            "cost": 5,
+            "origins": [
+                "Poison"
+            ],
+            "classes": [
+                "Alchemist"
+            ],
+            "champion": {
+                "key": "Singed",
+                "name": "Singed",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/singed.png",
+                "skill": {
+                    "name": "Poison Trail",
+                    "type": "Passive",
+                    "desc": "Singed leaves a toxic cloud wherever he moves, poisoning enemies that stand in it to take damage over 6 seconds.",
+                    "stats": [
+                        "Damage: 150 \/ 300 \/ 2000"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/singed_poisontrail.png",
+                    "cost": 0,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Singed"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/singed",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Singed",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 50,
+                "attack_damage": 0,
+                "attack_range_slot": 1,
+                "attack_speed": 0.001,
+                "dps": 0,
+                "health": 950,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "sion",
+            "cost": 3,
+            "origins": [
+                "Shadow"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "Sion",
+                "name": "Sion",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/sion.png",
+                "skill": {
+                    "name": "Decimating Smash",
+                    "type": "Active",
+                    "desc": "Sion winds up for a moment, then smashes his axe down in a direction, dealing damage to and knocking up all enemies hit.",
+                    "stats": [
+                        "Damage: 200 \/ 400 \/ 800"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/sion_decimatingsmash.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Sion"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/sion",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Sion",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 65,
+                "attack_range_slot": 1,
+                "attack_speed": 0.65,
+                "dps": 42,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 75
+            }
+        },
+        {
+            "key": "sivir",
+            "cost": 3,
+            "origins": [
+                "Desert"
+            ],
+            "classes": [
+                "Blademaster"
+            ],
+            "champion": {
+                "key": "Sivir",
+                "name": "Sivir",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/sivir.png",
+                "skill": {
+                    "name": "Ricochet",
+                    "type": "Active",
+                    "desc": "For the next 5 seconds, Sivir's attacks bounce, dealing physical damage to enemies hit and applying On Hit effects.",
+                    "stats": [
+                        "Bounces: 5 \/ 7 \/ 9",
+                        "Percetage Damage: 100% \/ 125% \/ 150%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/sivir_ricochet.png",
+                    "cost": 65,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Sivir"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/sivir",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Sivir",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 55,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 39,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "skarner",
+            "cost": 2,
+            "origins": [
+                "Crystal"
+            ],
+            "classes": [
+                "Predator"
+            ],
+            "champion": {
+                "key": "Skarner",
+                "name": "Skarner",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/skarner.png",
+                "skill": {
+                    "name": "Crystalline Exoskeleton",
+                    "type": "Active",
+                    "desc": "Skarner is shielded for damage for 8 seconds. While the shield persists, Skarner gains % attack speed.",
+                    "stats": [
+                        "Shield Amount: 150 \/ 450 \/ 750",
+                        "Attack Speed: 50% \/ 75% \/ 100%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/skarner_crystallineexoskeleton.png",
+                    "cost": 65,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Skarner"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/skarner",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Skarner",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.65,
+                "dps": 39,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "soraka",
+            "cost": 3,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Mystic"
+            ],
+            "champion": {
+                "key": "Soraka",
+                "name": "Soraka",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/soraka.png",
+                "skill": {
+                    "name": "Equinox",
+                    "type": "Active",
+                    "desc": "Soraka calms the area around a random enemy, dealing to all enemies standing in the area and preventing them from gaining mana. After a while the area dissipates.",
+                    "stats": [
+                        "Damage: 150 \/ 300 \/ 450",
+                        "Zone Duration: 3 \/ 5 \/ 7"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/soraka_equinox.png",
+                    "cost": 60,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Soraka"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/soraka",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Soraka",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 28,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "syndra",
+            "cost": 2,
+            "origins": [
+                "Ocean"
+            ],
+            "classes": [
+                "Mage"
+            ],
+            "champion": {
+                "key": "Syndra",
+                "name": "Syndra",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/syndra.png",
+                "skill": {
+                    "name": "Hydro Sphere",
+                    "type": "Active",
+                    "desc": "Syndra conjures a sphere of water near a random enemy which explodes, dealing magic damage to all enemies hit.",
+                    "stats": [
+                        "Damage: 175 \/ 350 \/ 600"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/syndra_hydrosphere.png",
+                    "cost": 65,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Syndra"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/syndra",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Syndra",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.7,
+                "dps": 28,
+                "health": 500,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "taliyah",
+            "cost": 1,
+            "origins": [
+                "Mountain"
+            ],
+            "classes": [
+                "Mage"
+            ],
+            "champion": {
+                "key": "Taliyah",
+                "name": "Taliyah",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/taliyah.png",
+                "skill": {
+                    "name": "Seismic Shove",
+                    "type": "Active",
+                    "desc": "Taliyah causes the ground to erupt under the enemy with the most mana, dealing magic damage to them and knocking them for 2 seconds towards her if they are ranged, or away from her if they are melee.",
+                    "stats": [
+                        "Damage: 150 \/ 350 \/ 550"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/taliyah_seismicshove.png",
+                    "cost": 80,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Taliyah"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/taliyah",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Taliyah",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.65,
+                "dps": 26,
+                "health": 500,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "taric",
+            "cost": 5,
+            "origins": [
+                "Crystal"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Taric",
+                "name": "Taric",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/taric.png",
+                "skill": {
+                    "name": "Cosmic Radiance",
+                    "type": "Active",
+                    "desc": "After a 1.5 second delay, pulses cosmic energy onto allied champions within some hexes, making them invulnerable for a seconds.",
+                    "stats": [
+                        "Hex Range: 2 \/ 3 \/ 4",
+                        "Immunity Duration: 3 \/ 3 \/ 5"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/taric_cosmicradiance.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Taric"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/taric",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Taric",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 60,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.65,
+                "dps": 39,
+                "health": 900,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "thresh",
+            "cost": 2,
+            "origins": [
+                "Ocean"
+            ],
+            "classes": [
+                "Warden"
+            ],
+            "champion": {
+                "key": "Thresh",
+                "name": "Thresh",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/thresh.png",
+                "skill": {
+                    "name": "Deep Sea Lantern",
+                    "type": "Active",
+                    "desc": "Thresh throws his lantern to the lowest health ally, shielding them and nearby allies damage for 5 seconds.",
+                    "stats": [
+                        "Shield Amount: 250 \/ 400 \/ 600"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/thresh_deepseapassage.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Thresh"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/thresh",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Thresh",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 40,
+                "attack_damage": 55,
+                "attack_range_slot": 2,
+                "attack_speed": 0.55,
+                "dps": 30,
+                "health": 700,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "twitch",
+            "cost": 4,
+            "origins": [
+                "Poison"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Twitch",
+                "name": "Twitch",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/twitch.png",
+                "skill": {
+                    "name": "Spray and Pray",
+                    "type": "Active",
+                    "desc": "Twitch gains infinite range and deals for 8 seconds. During this time his attacks travel their full range and hit every enemy they pass through. This can also trigger On-Hit effects.",
+                    "stats": [
+                        "AD Bonus Percentage: 130% \/ 160% \/ 300%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/twitch_sprayandpray.png",
+                    "cost": 70,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Twitch"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/twitch",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Twitch",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 65,
+                "attack_range_slot": 4,
+                "attack_speed": 0.75,
+                "dps": 49,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "varus",
+            "cost": 2,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Varus",
+                "name": "Varus",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/varus.png",
+                "skill": {
+                    "name": "Piercing Arrow",
+                    "type": "Active",
+                    "desc": "Varus channels for 1.5 seconds, then fires a piercing arrow, dealing magic damage to all enemies in its path.",
+                    "stats": [
+                        "Damage: 225 \/ 450 \/ 800"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/varus_piercingarrow.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Varus"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/varus",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Varus",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 60,
+                "attack_range_slot": 4,
+                "attack_speed": 0.75,
+                "dps": 45,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "vayne",
+            "cost": 1,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Ranger"
+            ],
+            "champion": {
+                "key": "Vayne",
+                "name": "Vayne",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/vayne.png",
+                "skill": {
+                    "name": "Silver Bolts",
+                    "type": "Passive",
+                    "desc": "Whenever Vayne Basic Attacks the same target 3 times, she deals % of her target's Maximum Health as true damage.",
+                    "stats": [
+                        "Percentage Damage: 10% \/ 13% \/ 16%"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/vayne_silverbolts.png",
+                    "cost": 0,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Vayne"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/vayne",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Vayne",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.75,
+                "dps": 30,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "veigar",
+            "cost": 3,
+            "origins": [
+                "Shadow"
+            ],
+            "classes": [
+                "Mage"
+            ],
+            "champion": {
+                "key": "Veigar",
+                "name": "Veigar",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/veigar.png",
+                "skill": {
+                    "name": "Primordial Burst",
+                    "type": "Active",
+                    "desc": "Veigar blasts an enemy with magical energy, dealing magic damage. If Veigar is a higher star level than his target, this damage is incresed to 19999.",
+                    "stats": [
+                        "Damage: 325 \/ 650 \/ 975"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/veigar_primordialburst.png",
+                    "cost": 60,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Veigar"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/veigar",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Veigar",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 50,
+                "attack_range_slot": 3,
+                "attack_speed": 0.6,
+                "dps": 30,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "vladimir",
+            "cost": 1,
+            "origins": [
+                "Ocean"
+            ],
+            "classes": [
+                "Mage"
+            ],
+            "champion": {
+                "key": "Vladimir",
+                "name": "Vladimir",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/vladimir.png",
+                "skill": {
+                    "name": "Drain",
+                    "type": "Active",
+                    "desc": "Vladimir deals magic damage to the target and heals for the same amount.",
+                    "stats": [
+                        "Damage: 200 \/ 325 \/ 500"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/vladimir_drain.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Vladimir"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/vladimir",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Vladimir",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 40,
+                "attack_range_slot": 2,
+                "attack_speed": 0.65,
+                "dps": 26,
+                "health": 550,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "volibear",
+            "cost": 2,
+            "origins": [
+                "Electric",
+                "Glacial"
+            ],
+            "classes": [
+                "Berserker"
+            ],
+            "champion": {
+                "key": "Volibear",
+                "name": "Volibear",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/volibear.png",
+                "skill": {
+                    "name": "Frenzied Bite",
+                    "type": "Active",
+                    "desc": "Volibear bites his target, dealing damage. If the target is below 35% health, Frenzied Bite kills the target and restores Volibear's mana to full.",
+                    "stats": [
+                        "Damage: 200 \/ 450 \/ 850"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/volibear_frenzy.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Volibear"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/volibear",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Volibear",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 42,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "warwick",
+            "cost": 1,
+            "origins": [
+                "Glacial"
+            ],
+            "classes": [
+                "Predator"
+            ],
+            "champion": {
+                "key": "Warwick",
+                "name": "Warwick",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/warwick.png",
+                "skill": {
+                    "name": "Infinite Duress",
+                    "type": "Active",
+                    "desc": "Warwick pounces on the weakest enemy, stunning them for 1.5 seconds and striking them 3 times, dealing magic damage. Each strike triggers on-hit effects and heals Warwick for 100% of the damage dealt.",
+                    "stats": [
+                        "Damage: 200 \/ 500 \/ 800"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/warwick_infiniteduress.png",
+                    "cost": 125,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Warwick"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/warwick",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Warwick",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 50,
+                "attack_range_slot": 1,
+                "attack_speed": 0.6,
+                "dps": 30,
+                "health": 650,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "yasuo",
+            "cost": 2,
+            "origins": [
+                "Wind"
+            ],
+            "classes": [
+                "Blademaster"
+            ],
+            "champion": {
+                "key": "Yasuo",
+                "name": "Yasuo",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/yasuo.png",
+                "skill": {
+                    "name": "Last Breath",
+                    "type": "Active",
+                    "desc": "Yasuo blinks to the enemy with the most items and knocks them up, holding them airborn for 1 second and hitting them 3 times, dealing basic attack damage and applying On Hit effects.",
+                    "stats": [
+                        "Hits: 4 \/ 5 \/ 6"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/yasuo_lastbreath.png",
+                    "cost": 100,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Yasuo"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/yasuo",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Yasuo",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 30,
+                "attack_damage": 60,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 42,
+                "health": 600,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "yorick",
+            "cost": 4,
+            "origins": [
+                "Light"
+            ],
+            "classes": [
+                "Summoner"
+            ],
+            "champion": {
+                "key": "Yorick",
+                "name": "Yorick",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/yorick.png",
+                "skill": {
+                    "name": "Shepherd of Souls",
+                    "type": "Active",
+                    "desc": "Yorick blesses his lowest health allies except Minions of Light. When they die they are resurrected as a Minion of Light with several health and attack damage.",
+                    "stats": [
+                        "Minion Health: 600 \/ 1000 \/ 2000",
+                        "Minion Damage: 100 \/ 200 \/ 300",
+                        "Number of Targets: 2 \/ 3 \/ 12"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/yorick_shepherdofsouls.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Yorick"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/yorick",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Yorick",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 35,
+                "attack_damage": 65,
+                "attack_range_slot": 1,
+                "attack_speed": 0.7,
+                "dps": 46,
+                "health": 800,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        },
+        {
+            "key": "zed",
+            "cost": 5,
+            "origins": [
+                "Electric"
+            ],
+            "classes": [
+                "Summoner",
+                "Assassin"
+            ],
+            "champion": {
+                "key": "Zed",
+                "name": "Zed",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/zed.png",
+                "skill": {
+                    "name": "Living Lightning",
+                    "type": "Active",
+                    "desc": "Zed creates an identical clone of himself behind his current target. This clone can also cast Living Lightning, and inherits Zed's items, stats, and current health.",
+                    "stats": [
+                        "Mana Increase: 50 \/ 25 \/ 0"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/zed_livingshadow.png",
+                    "cost": 150,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Zed"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/zed",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Zed",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 25,
+                "attack_damage": 70,
+                "attack_range_slot": 1,
+                "attack_speed": 1,
+                "dps": 70,
+                "health": 850,
+                "magical_resistance": 20,
+                "starting_mana": 50
+            }
+        },
+        {
+            "key": "zyra",
+            "cost": 1,
+            "origins": [
+                "Inferno"
+            ],
+            "classes": [
+                "Summoner"
+            ],
+            "champion": {
+                "key": "Zyra",
+                "name": "Zyra",
+                "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champions\/set2\/zyra.png",
+                "skill": {
+                    "name": "Rampant Growth",
+                    "type": "Active",
+                    "desc": "Zyra summons Flame Spitters at a random location at the edge of the arena. The Flame spitters attack the nearest enemy for 3 seconds. dealing magic damage per attack a total of 4 times.",
+                    "stats": [
+                        "Damage: 55 \/ 65 \/ 75",
+                        "Number of Plants: 2 \/ 3 \/ 4"
+                    ],
+                    "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/champion-skills\/zyra_rampantgrowth.png",
+                    "cost": 75,
+                    "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/skill\/Zyra"
+                },
+                "guide_url": "https:\/\/lolchess.gg\/champions\/set2\/zyra",
+                "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/champion\/set2\/Zyra",
+                "is_pbe": false
+            },
+            "stats": {
+                "armor": 20,
+                "attack_damage": 40,
+                "attack_range_slot": 3,
+                "attack_speed": 0.65,
+                "dps": 26,
+                "health": 500,
+                "magical_resistance": 20,
+                "starting_mana": 0
+            }
+        }
+    ],
+    championClasses: {
+        "alchemist": {
+            "key": "Alchemist",
+            "name": "Alchemist",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_alchemist.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_alchemist.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_alchemist.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "1": "Innate: Alchemists ignore collision and never stop moving"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Alchemist"
+        },
+        "assassin": {
+            "key": "Assassin",
+            "name": "Assassin",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_assassin.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_assassin.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_assassin.png",
+            "synergy": {
+                "description": "Innate: At the start of combat, Assassins leap to the farthest enemy. Assassins gain bonus Critical Strike Damage and Chance.",
+                "stats": {
+                    "3": "+65% Critical Strike Damage & +10% Critical Strike Chance",
+                    "6": "+225% Critical Strike Damage & +20% Critical Strike Chance"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Assassin"
+        },
+        "berserker": {
+            "key": "Berserker",
+            "name": "Berserker",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_berserker.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_berserker.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_berserker.png",
+            "synergy": {
+                "description": "Innate: At the start of combat, Berserkers leap to the nearest enemy. Berserkers have a chance to hit all units in a cone in front of them with their attacks",
+                "stats": {
+                    "3": "45% Chance",
+                    "6": "100% Chance, all Berserkers +25 AD"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Berserker"
+        },
+        "blademaster": {
+            "key": "Blademaster",
+            "name": "Blademaster",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_blademaster.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_blademaster.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_blademaster.png",
+            "synergy": {
+                "description": "Blademaster Basic Attacks have a 35% chance to trigger additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
+                "stats": {
+                    "2": "1 Additional Attack",
+                    "4": "2 Additional Attacks",
+                    "6": "3 Additional Attacks"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Blademaster"
+        },
+        "druid": {
+            "key": "Druid",
+            "name": "Druid",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_druid.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_druid.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_druid.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "2": "Druids regenerate 45 health each second"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Druid"
+        },
+        "mage": {
+            "key": "Mage",
+            "name": "Mage",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_mage.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_mage.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_mage.png",
+            "synergy": {
+                "description": "Mages have a chance on cast to instead Doublecast",
+                "stats": {
+                    "3": "50% chance",
+                    "6": "100% chance & 20 AP to all Mages"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Mage"
+        },
+        "mystic": {
+            "key": "Mystic",
+            "name": "Mystic",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_mystic.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_mystic.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_mystic.png",
+            "synergy": {
+                "description": "All allies gain increased Magic Resist",
+                "stats": {
+                    "2": "40 Magic Resist",
+                    "4": "120 Magic Resist"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Mystic"
+        },
+        "predator": {
+            "key": "Predator",
+            "name": "Predator",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_predator.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_predator.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_predator.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "3": "Predators instantly kill enemies they damage who are below 25% health"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Predator"
+        },
+        "ranger": {
+            "key": "Ranger",
+            "name": "Ranger",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_ranger.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_ranger.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_ranger.png",
+            "synergy": {
+                "description": "Every 3 seconds, Rangers have a chance to double their Attack Speed for 3 seconds.",
+                "stats": {
+                    "2": "35% Chance to 2x Attack Speed",
+                    "4": "80% Chance to 2x Attack Speed",
+                    "6": "100% Chance to 2.5x Attack Speed"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Ranger"
+        },
+        "summoner": {
+            "key": "Summoner",
+            "name": "Summoner",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_summoner.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_summoner.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_summoner.png",
+            "synergy": {
+                "description": "Summoned units have increased health and duration",
+                "stats": {
+                    "3": "30% increase",
+                    "6": "120% increase"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Summoner"
+        },
+        "warden": {
+            "key": "Warden",
+            "name": "Warden",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_warden.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_warden.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_warden.png",
+            "synergy": {
+                "description": "Wardens gain increased total Armor",
+                "stats": {
+                    "2": "+150% Armor",
+                    "4": "+300% Armor",
+                    "6": "+999% Armor"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Warden"
+        },
+        "avatar": {
+            "key": "Avatar",
+            "name": "Avatar",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_avatar.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_avatar.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_avatar.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "1": "An Avatar's Origin Element is counted twice for Trait bonuses"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Avatar"
+        },
+        "soulbound": {
+            "key": "Soulbound",
+            "name": "Soulbound",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_soulbound.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_soulbound.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_soulbound.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "2": "The first Soulbound unit to die in a round will instead enter the Spirit Realm, becoming untargetable and continuing to fight as long as another Soulbound unit is alive."
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/class\/Soulbound"
+        }
+    },
+    championOrigins: {
+        "crystal": {
+            "key": "Crystal",
+            "name": "Crystal",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_crystal.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_crystal.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_crystal.png",
+            "synergy": {
+                "description": "Crystal Champions have a maximum amount of damage they can take from a single hit.",
+                "stats": {
+                    "2": "100 Max Damage",
+                    "4": "60 Max Damage"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Crystal"
+        },
+        "desert": {
+            "key": "Desert",
+            "name": "Desert",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_desert.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_desert.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_desert.png",
+            "synergy": {
+                "description": "Reduces each enemy's armor",
+                "stats": {
+                    "2": "40% Armor reduction",
+                    "4": "100% Armor reduction"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Desert"
+        },
+        "electric": {
+            "key": "Electric",
+            "name": "Electric",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_electric.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_electric.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_electric.png",
+            "synergy": {
+                "description": "Electric Champions shock nearby enemies whenever they deal or receive a critical strike",
+                "stats": {
+                    "2": "80 damage",
+                    "3": "250 damage",
+                    "4": "500 damage"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Electric"
+        },
+        "forest": {
+            "key": "Forest",
+            "name": "Woodland",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_forest.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_forest.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_forest.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "3": "At the start of combat, a random Woodland Champion makes a copy of themselves",
+                    "6": "Woodland to clone them all."
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Forest"
+        },
+        "glacial": {
+            "key": "Glacial",
+            "name": "Glacial",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_glacial.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_glacial.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_glacial.png",
+            "synergy": {
+                "description": "Basic Attacks from Glacials have a chance to stun their target for 1.5 seconds.",
+                "stats": {
+                    "2": "20% Chance to Stun",
+                    "4": "35% Chance to Stun",
+                    "6": "50% Chance to Stun"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Glacial"
+        },
+        "inferno": {
+            "key": "Inferno",
+            "name": "Inferno",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_inferno.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_inferno.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_inferno.png",
+            "synergy": {
+                "description": "Inferno spell damage and critical strikes burns the ground beneath the target, dealing a percent of that spell's pre-mitigation damage as magic damage over 4 seconds",
+                "stats": {
+                    "3": "70% Damage, Hexes that light on fire: 1",
+                    "6": "150% Damage, Hexes that light on fire: 3",
+                    "9": "250% Damage, Hexes that light on fire: 5"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Inferno"
+        },
+        "light": {
+            "key": "Light",
+            "name": "Light",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_light.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_light.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_light.png",
+            "synergy": {
+                "description": "When a Light Champion dies, all other Light Champions gain Attack Speed and are healed for 25% of their Maximum Health",
+                "stats": {
+                    "3": "+15% Attack Speed",
+                    "6": "+35% Attack Speed",
+                    "9": "+55% Attack Speed"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Light"
+        },
+        "mountain": {
+            "key": "Mountain",
+            "name": "Mountain",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_mountain.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_mountain.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_mountain.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "2": "At the start of combat, a random ally gains a 1500 health Stoneshield"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Mountain"
+        },
+        "ocean": {
+            "key": "Ocean",
+            "name": "Ocean",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_ocean.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_ocean.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_ocean.png",
+            "synergy": {
+                "description": "All allies restore mana every 4 seconds",
+                "stats": {
+                    "2": "+10 Mana",
+                    "4": "+30 Mana",
+                    "6": "+60 Mana"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Ocean"
+        },
+        "poison": {
+            "key": "Poison",
+            "name": "Poison",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_poison.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_poison.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_poison.png",
+            "synergy": {
+                "description": "",
+                "stats": {
+                    "3": "Poison Champions apply Neurotoxin when they deal damage, increasing the target's mana cost by 50%"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Poison"
+        },
+        "shadow": {
+            "key": "Shadow",
+            "name": "Shadow",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_shadow.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_shadow.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_shadow.png",
+            "synergy": {
+                "description": "Shadow units deal increased damage for 6 seconds at combat start, refreshed on takedown.",
+                "stats": {
+                    "3": "65% Increased Damage, Self Takedown",
+                    "6": "175% Increased Damage, Any Shadow Takedown"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Shadow"
+        },
+        "steel": {
+            "key": "Steel",
+            "name": "Steel",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_steel.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_steel.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_steel.png",
+            "synergy": {
+                "description": "Steel Champions gain damage immunity for a few seconds when they are reduced below 50% health",
+                "stats": {
+                    "2": "2 seconds of immunity",
+                    "3": "3 seconds of immunity",
+                    "4": "4 seconds of immunity"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Steel"
+        },
+        "wind": {
+            "key": "Wind",
+            "name": "Wind",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_wind.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_wind.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_wind.png",
+            "synergy": {
+                "description": "All allies gain dodge chance",
+                "stats": {
+                    "2": "20% dodge chance",
+                    "3": "25% dodge chance",
+                    "4": "35% dodge chance"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Wind"
+        },
+        "lunar": {
+            "key": "Lunar",
+            "name": "Lunar",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-darken\/trait_icon_lunar.png",
+            "image_url_white": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-white\/trait_icon_lunar.png",
+            "image_url_black": "\/\/cdn.lolchess.gg\/images\/tft\/traiticons-black\/trait_icon_lunar.png",
+            "synergy": {
+                "description": "Moonlight transforms unit durability into a win condition for team comps that are built with drawn out battles in mind.",
+                "stats": {
+                    "2": "Every 7 seconds, your team gains 15% Critical Strike Chance, 15% Critical Strike Damage, and 10% Spell Power. (Stacks up to 4 times)"
+                }
+            },
+            "is_strict_stack": false,
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/synergy\/set2\/origin\/Lunar"
+        }
+    },
+    items: {
+        "bladeoftheruinedking": {
+            "id": 9,
+            "name": "Blade of the Ruined King",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3153.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/9",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Blademaster"
+        },
+        "bloodthirster": {
+            "id": 10,
+            "name": "Bloodthirster",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3072.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/10",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "dragonsclaw": {
+            "id": 13,
+            "name": "Dragon's Claw",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/DragonsClaw.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/13",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "forceofnature": {
+            "id": 14,
+            "name": "Force of Nature",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/ForceOfNature.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/14",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "frozenheart": {
+            "id": 15,
+            "name": "Frozen Heart",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3110.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/15",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "frozenmallet": {
+            "id": 16,
+            "name": "Frozen Mallet",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3022.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/16",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Glacial"
+        },
+        "guardianangel": {
+            "id": 17,
+            "name": "Guardian Angel",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3026.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/17",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "guinsoosrageblade": {
+            "id": 18,
+            "name": "Guinsoo's Rageblade",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3124.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/18",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "hextechgunblade": {
+            "id": 19,
+            "name": "Hextech Gunblade",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3146.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/19",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "hush": {
+            "id": 20,
+            "name": "Hush",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/Hush.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/20",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "infinityedge": {
+            "id": 21,
+            "name": "Infinity Edge",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3031.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/21",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "ionicspark": {
+            "id": 22,
+            "name": "Ionic Spark",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/IonicSpark.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/22",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "locketoftheironsolari": {
+            "id": 24,
+            "name": "Locket of the Iron Solari",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3190.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/24",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "ludensecho": {
+            "id": 25,
+            "name": "Luden's Echo",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3285.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/25",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "morellonomicon": {
+            "id": 26,
+            "name": "Morellonomicon",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3165.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/26",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "phantomdancer": {
+            "id": 27,
+            "name": "Phantom Dancer",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3046.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/27",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "rabadonsdeathcap": {
+            "id": 28,
+            "name": "Rabadon's Deathcap",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3089.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/28",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "rapidfirecannon": {
+            "id": 29,
+            "name": "Rapid Firecannon",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3094.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/29",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "redbuff": {
+            "id": 30,
+            "name": "Red Buff",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/RedBuff.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/30",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "redemption": {
+            "id": 31,
+            "name": "Redemption",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3107.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/31",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "runaanshurricane": {
+            "id": 32,
+            "name": "Runaan's Hurricane",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3085.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/32",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "seraphsembrace": {
+            "id": 33,
+            "name": "Seraph's Embrace",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3040.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/33",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "spearofshojin": {
+            "id": 34,
+            "name": "Spear of Shojin",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3161.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/34",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "statikkshiv": {
+            "id": 35,
+            "name": "Statikk Shiv",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3087.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/35",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "swordbreaker": {
+            "id": 36,
+            "name": "Sword Breaker",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/SwordBreaker.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/36",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "thornmail": {
+            "id": 38,
+            "name": "Thornmail",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3075.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/38",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "titanichydra": {
+            "id": 39,
+            "name": "Titanic Hydra",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3748.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/39",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "warmogsarmor": {
+            "id": 40,
+            "name": "Warmog's Armor",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3083.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/40",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "youmuusghostblade": {
+            "id": 41,
+            "name": "Youmuu's Ghostblade",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3142.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/41",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Assassin"
+        },
+        "zekesherald": {
+            "id": 43,
+            "name": "Zeke's Herald",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/ZekesHerald.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/43",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "zephyr": {
+            "id": 44,
+            "name": "Zephyr",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/Zephyr.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/44",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "thiefsgloves": {
+            "id": 46,
+            "name": "Thief's Gloves",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/ThiefsGloves.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/46",
+            "required_slots": 3,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "handofjustice": {
+            "id": 47,
+            "name": "Hand of Justice",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/HandofJustice.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/47",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "arcanegauntlet": {
+            "id": 48,
+            "name": "Jeweled Gauntlet",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/ArcaneGauntlet.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/48",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "quicksilver": {
+            "id": 49,
+            "name": "Quicksilver",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/Quicksilver.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/49",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "icebornegauntlet": {
+            "id": 50,
+            "name": "Iceborn Gauntlet",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3025.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/50",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "backhand": {
+            "id": 51,
+            "name": "Trap Claw",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/Backhand.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/51",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "repeatingcrossbow": {
+            "id": 52,
+            "name": "Repeating Crossbow",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3036.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/52",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "lordsedge": {
+            "id": 54,
+            "name": "Deathblade",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/LordsEdge.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/54",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "giantslayer": {
+            "id": 55,
+            "name": "Giant Slayer",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/GiantSlayer.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/55",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "wardensmail": {
+            "id": 57,
+            "name": "Warden's Mail",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3082.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/57",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Warden"
+        },
+        "infernocinder": {
+            "id": 58,
+            "name": "Inferno's Cinder",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3751.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/58",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Inferno"
+        },
+        "talismanoflight": {
+            "id": 59,
+            "name": "Talisman of Light",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/TalismanofLight.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/59",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Light"
+        },
+        "berserkeraxe": {
+            "id": 60,
+            "name": "Berserker Axe",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3071.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/60",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Berserker"
+        },
+        "magescap": {
+            "id": 61,
+            "name": "Mage's Cap",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/MagesCap.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/61",
+            "required_slots": 1,
+            "is_unique": true,
+            "is_pbe": false,
+            "affected_trait": "Mage"
+        },
+        "lastwhisper": {
+            "id": 63,
+            "name": "Last Whisper",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3035.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/63",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "bramblevest": {
+            "id": 64,
+            "name": "Bramble Vest",
+            "image_url": "http:\/\/ddragon.leagueoflegends.com\/cdn\/10.1.1\/img\/item\/3076.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/64",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        },
+        "titansresolve": {
+            "id": 65,
+            "name": "Titan\u2019s Resolve",
+            "image_url": "\/\/cdn.lolchess.gg\/images\/tft\/item\/TitansResolve.png",
+            "tooltip_url": "https:\/\/lolchess.gg\/tooltip\/item\/set2\/65",
+            "required_slots": 1,
+            "is_unique": false,
+            "is_pbe": false,
+            "affected_trait": null
+        }
+    },
+    deck: {
+        "slots": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "champion": "vladimir",
+                "items": []
+            },
+            null,
+            {
+                "champion": "malphite",
+                "items": [
+                    61,
+                    40
+                ]
+            },
+            {
+                "champion": "nautilus",
+                "items": []
+            },
+            null,
+            null,
+            null,
+            {
+                "champion": "taliyah",
+                "items": []
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            {
+                "champion": "brand",
+                "items": [
+                    26,
+                    28,
+                    33
+                ]
+            },
+            null,
+            {
+                "champion": "veigar",
+                "items": [
+                    49,
+                    25,
+                    17
+                ]
+            },
+            null,
+            {
+                "champion": "syndra",
+                "items": []
+            },
+            null,
+            {
+                "champion": "nami",
+                "items": []
+            }
+        ],
+        "set": "set2",
+        "revision": 1
+    }
+}
