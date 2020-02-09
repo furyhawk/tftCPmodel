@@ -6,9 +6,9 @@ from ortools.sat.python import cp_model
 class HeroesPartialSolutionPrinter(cp_model.CpSolverSolutionCallback):
     """Print intermediate solutions."""
 
-    def __init__(self, classes, classOrigin, heroes, num_heroes, num_slots, num_classes, sols):
+    def __init__(self, slots, classOrigin, heroes, num_heroes, num_slots, num_classes, sols):
         cp_model.CpSolverSolutionCallback.__init__(self)
-        self._classes = classes
+        self._slots = slots
         self._classOrigin = classOrigin
         self._heroes = heroes
         self._num_heroes = num_heroes
@@ -25,12 +25,12 @@ class HeroesPartialSolutionPrinter(cp_model.CpSolverSolutionCallback):
                 for n in range(self._num_heroes):
                     is_working = False
                     # for s in range(self._num_classes):
-                    if self.Value(self._classes[(n, s)]):
+                    if self.Value(self._slots[(n, s)]):
                         is_working = True
-                        print('  Hero %s works class %i' % (self._heroes[n][0], s))
+                        print('  %s class %i' % (self._heroes[n][0], s))
                         # print('  Hero %s works class %s' % (self._heroes[n][0], self._classOrigin[s]))
-                    if not is_working:
-                        print('  Hero {} does not work'.format(n))
+                    # if not is_working:
+                        # print('  Hero {} does not work'.format(n))
             print()
         self._solution_count += 1
 
@@ -78,6 +78,8 @@ def main():
     # Creates the model.
     model = cp_model.CpModel()
 
+ 
+
     # Creates class variables.
     # classes[(n, d, s)]: Hero 'n' works class 's' on slot 'd'.
     classes = {}
@@ -86,7 +88,18 @@ def main():
             for s in all_slots:
                 # print(('class_n%sc%ss%i' % (n[0], c, s)))
                 classes[(heroes.index(n), classOrigin.index(c), s)] = model.NewBoolVar('class_n%sc%ss%i' % (n[0], c, s))
-                print(classes[(heroes.index(n), classOrigin.index(c), s)])
+                # print(classes[(heroes.index(n), classOrigin.index(c), s)])   
+
+    # Creates class variables.
+    # classes[(n, d, s)]: Hero 'n' works class 's' on slot 'd'.
+    slots = {}
+    for n in heroes[0:]:
+        for s in all_slots:
+            slots[(heroes.index(n), s)] = model.NewBoolVar('class_n%ss%i' % (n[0], s))
+            # print(slots[(heroes.index(n), s)])
+            model.AddMaxEquality(slots[(heroes.index(n), s)],
+                         [classes[(heroes.index(n), classOrigin.index(c), s)] for c in n[1:]])
+    
     # for n in all_heroes:
     #     for d in all_slots:
     #         for s in all_classes:
@@ -95,13 +108,27 @@ def main():
 
     # Each class is assigned to exactly one Hero in .
     for s in all_slots:
+        model.Add(sum(slots[(heroes.index(n), s)] for n in heroes[0:])  == 1)
         # print(classes[(heroes.index(n), classOrigin.index(c), s)] for n in heroes[0:] for c in n[1:])
-        model.Add(sum(classes[(heroes.index(n), classOrigin.index(c), s)] for n in heroes[0:] for c in n[1:] )  == 1)
+        # model.Add(sum(classes[(heroes.index(n), classOrigin.index(c), s)] for n in heroes[0:] for c in n[1:] )  == 1)
 
     # Each Hero works at most one class per slot.
     for n in heroes[0:]:
-        for c in n[1:]:
-            model.Add(sum(classes[(heroes.index(n), classOrigin.index(c), s)] for s in all_slots) <= 1)
+        model.Add(sum(slots[(heroes.index(n), s)] for s in all_slots) <= 1)
+
+                
+    # works_shift[(n, s)] is 1 if nurse n works shift s at least one day in
+    # the week.
+    # works_shift = {}
+    # for n in all_nurses:
+    #     for s in all_shifts:
+    #         works_shift[(n, s)] = model.NewBoolVar('works_shift_n%is%i' % (n, s))
+    #         model.AddMaxEquality(works_shift[(n, s)],
+    #                      [shifts[(n, d, s)] for d in all_days])            
+
+    # for n in heroes[0:]:
+    #     for c in n[1:]:
+    #         model.Add(sum(classes[(heroes.index(n), classOrigin.index(c), s)] for s in all_slots) <= 1)
 
     # min_classes_assigned is the largest integer such that every Hero can be
     # assigned at least that number of classes.
@@ -123,7 +150,7 @@ def main():
     solver.parameters.linearization_level = 0
     # Display the first five solutions.
     a_few_solutions = range(2)
-    solution_printer = HeroesPartialSolutionPrinter(classes, classOrigin, heroes, num_heroes,
+    solution_printer = HeroesPartialSolutionPrinter(slots, classOrigin, heroes, num_heroes,
                                                     num_slots, num_classes,
                                                     a_few_solutions)
     solver.SearchForAllSolutions(model, solution_printer)
